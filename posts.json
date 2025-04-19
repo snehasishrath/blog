@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Cloud Computing Basics",
+    "date": "2025-04-19",
+    "author": "Jane Smith",
+    "tags": ["cloud", "basics"],
+    "slug": "cloud-computing-basics",
+    "excerpt": "Cloud Computing Basics"
+  },
+  {
+    "title": "Understanding Cloud Deployment Models",
+    "date": "2025-04-19",
+    "author": "Alice Johnson",
+    "tags": ["cloud", "deployment"],
+    "slug": "cloud-deployment-models",
+    "excerpt": "Understanding Cloud Deployment Models"
+  },
+  {
+    "title": "Cloud Security Best Practices",
+    "date": "2025-04-19",
+    "author": "John Doe",
+    "tags": ["cloud", "security"],
+    "slug": "cloud-security-best-practices",
+    "excerpt": "Cloud Security Best Practices"
+  },
+  {
+    "title": "Sample Blog Post",
+    "date": "2025-04-19",
+    "author": "John Doe",
+    "tags": ["sample", "blog"],
+    "slug": "sample-post",
+    "excerpt": "Sample Blog Post"
+  }
+]
