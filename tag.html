@@ -5,11 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Chronicles - Tags</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1e3a8a, #2563eb);
+        }
+
+        h1 {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #1e40af;
+            transform: scale(1.05);
+        }
+
+        .dark {
+            background-color: #1a202c;
+            color: #cbd5e0;
+        }
+
+        .dark header {
+            background: linear-gradient(90deg, #1e293b, #4a5568);
+        }
+
+        .dark a {
+            color: #63b3ed;
+        }
+
+        .dark button {
+            background-color: #2d3748;
+        }
+
+        .dark button:hover {
+            background-color: #4a5568;
+        }
+
+        .logo {
+            max-width: 100px;
+            height: auto;
+        }
+
+        @media (min-width: 768px) {
+            .logo {
+                max-width: 150px;
+            }
+        }
+
+        .cloud-image {
+            max-width: 100px;
+            height: auto;
+        }
+
+        @media (min-width: 768px) {
+            .cloud-image {
+                max-width: 150px;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <header class="bg-blue-600 text-white p-4">
+    <header class="bg-blue-600 text-white p-4 flex items-center">
+        <a href="index.html">
+            <img src="logo.svg" alt="Cloud Chronicles Logo" class="logo mr-4">
+        </a>
         <h1 class="text-2xl font-bold">Cloud Chronicles</h1>
+        <img src="cloud.svg" alt="Cloud Image" class="cloud-image ml-auto">
     </header>
+    <div class="top-menu">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="tag.html">Tags</a>
+            <a href="post.html">Posts</a>
+        </div>
+        <div>
+            <a href="https://snehasishrath.github.io/snehasishrath-profile/" target="_blank" rel="noopener">My Profile</a>
+        </div>
+    </div>
     <main class="p-4">
         <section id="tag-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Blog posts filtered by tag will be dynamically injected here -->
