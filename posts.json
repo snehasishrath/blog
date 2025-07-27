@@ -5,7 +5,7 @@
     "author": "Jane Smith",
     "tags": ["cloud", "basics"],
     "slug": "cloud-computing-basics",
-    "excerpt": "Cloud Computing Basics"
+    "excerpt": "Cloud computing is the on-demand delivery of IT resources over the internet, providing the flexibility to scale quickly and pay only for what you use."
   },
   {
     "title": "Understanding Cloud Deployment Models",
@@ -13,7 +13,7 @@
     "author": "Alice Johnson",
     "tags": ["cloud", "deployment"],
     "slug": "cloud-deployment-models",
-    "excerpt": "Understanding Cloud Deployment Models"
+    "excerpt": "Choosing the right cloud deployment model is essential for successfully running applications in the cloud."
   },
   {
     "title": "Cloud Security Best Practices",
@@ -21,7 +21,7 @@
     "author": "John Doe",
     "tags": ["cloud", "security"],
     "slug": "cloud-security-best-practices",
-    "excerpt": "Cloud Security Best Practices"
+    "excerpt": "Protecting data in the cloud is a top priority for any business."
   },
   {
     "title": "Sample Blog Post",
@@ -29,6 +29,6 @@
     "author": "John Doe",
     "tags": ["sample", "blog"],
     "slug": "sample-post",
-    "excerpt": "Sample Blog Post"
+    "excerpt": "This sample entry demonstrates how a typical blog post might look in Markdown."
   }
 ]
