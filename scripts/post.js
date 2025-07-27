@@ -4,9 +4,6 @@ function stripFrontMatter(markdown) {
     return markdown.replace(frontMatterRegex, '');
 }
 
-// Test case to verify marked library functionality
-console.log('Testing marked library with sample Markdown:');
-console.log(marked.parse('# Sample Markdown\nThis is a test.'));
 
 // Fetch and render the blog post
 const urlParams = new URLSearchParams(window.location.search);
