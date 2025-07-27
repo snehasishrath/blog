@@ -1,86 +1,86 @@
 [
   {
-    "title": "\"Cloud Best Practices\"",
-    "date": "\"2025-04-19\"",
-    "author": "\"Jane Smith\"",
+    "title": "Cloud Best Practices",
+    "date": "2025-04-19",
+    "author": "Jane Smith",
     "tags": [
-      "[\"generic\"]"
+      "generic"
     ],
-    "slug": "\"cloud-best-practices\"",
+    "slug": "cloud-best-practices",
     "excerpt": "Following proven cloud practices helps organizations achieve reliability and cost efficiency."
   },
   {
-    "title": "\"Cloud Computing Basics\"",
-    "date": "\"2025-04-19\"",
-    "author": "\"Jane Smith\"",
+    "title": "Cloud Computing Basics",
+    "date": "2025-04-19",
+    "author": "Jane Smith",
     "tags": [
-      "[\"cloud\"",
-      "\"basics\"]"
+      "cloud",
+      "basics"
     ],
-    "slug": "\"cloud-computing-basics\"",
+    "slug": "cloud-computing-basics",
     "excerpt": "# Cloud Computing Basics"
   },
   {
-    "title": "\"Understanding Cloud Deployment Models\"",
-    "date": "\"2025-04-19\"",
-    "author": "\"Alice Johnson\"",
+    "title": "Understanding Cloud Deployment Models",
+    "date": "2025-04-19",
+    "author": "Alice Johnson",
     "tags": [
-      "[\"cloud\"",
-      "\"deployment\"]"
+      "cloud",
+      "deployment"
     ],
-    "slug": "\"cloud-deployment-models\"",
+    "slug": "cloud-deployment-models",
     "excerpt": "# Understanding Cloud Deployment Models"
   },
   {
-    "title": "\"Cloud Security Best Practices\"",
-    "date": "\"2025-04-19\"",
-    "author": "\"John Doe\"",
+    "title": "Cloud Security Best Practices",
+    "date": "2025-04-19",
+    "author": "John Doe",
     "tags": [
-      "[\"cloud\"",
-      "\"security\"]"
+      "cloud",
+      "security"
     ],
-    "slug": "\"cloud-security-best-practices\"",
+    "slug": "cloud-security-best-practices",
     "excerpt": "# Cloud Security Best Practices"
   },
   {
-    "title": "\"Introduction to AWS\"",
-    "date": "\"2025-04-19\"",
-    "author": "\"John Doe\"",
+    "title": "Introduction to AWS",
+    "date": "2025-04-19",
+    "author": "John Doe",
     "tags": [
-      "[\"aws\"]"
+      "aws"
     ],
-    "slug": "\"intro-to-aws\"",
+    "slug": "intro-to-aws",
     "excerpt": "Amazon Web Services offers a broad set of global compute, storage, database, and other cloud capabilities."
   },
   {
-    "title": "\"Introduction to Azure\"",
-    "date": "\"2025-04-19\"",
-    "author": "\"Jane Smith\"",
+    "title": "Introduction to Azure",
+    "date": "2025-04-19",
+    "author": "Jane Smith",
     "tags": [
-      "[\"azure\"]"
+      "azure"
     ],
-    "slug": "\"intro-to-azure\"",
+    "slug": "intro-to-azure",
     "excerpt": "Azure provides a wide range of cloud services for building, deploying, and managing applications."
   },
   {
-    "title": "\"Introduction to GCP\"",
-    "date": "\"2025-04-19\"",
-    "author": "\"Alice Johnson\"",
+    "title": "Introduction to GCP",
+    "date": "2025-04-19",
+    "author": "Alice Johnson",
     "tags": [
-      "[\"gcp\"]"
+      "gcp"
     ],
-    "slug": "\"intro-to-gcp\"",
+    "slug": "intro-to-gcp",
     "excerpt": "Google Cloud Platform delivers secure and scalable infrastructure along with advanced analytics tools."
   },
   {
-    "title": "\"Sample Blog Post\"",
-    "date": "\"2025-04-19\"",
-    "author": "\"John Doe\"",
+    "title": "Sample Blog Post",
+    "date": "2025-04-19",
+    "author": "John Doe",
     "tags": [
-      "[\"sample\"",
-      "\"blog\"]"
+      "sample",
+      "blog"
     ],
-    "slug": "\"sample-post\"",
+    "slug": "sample-post",
     "excerpt": "# Sample Blog Post"
   }
 ]
