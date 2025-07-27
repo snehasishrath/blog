@@ -1,3 +1,8 @@
+// Ensure Fuse.js is loaded
+if (typeof Fuse === 'undefined') {
+    console.error('Fuse.js failed to load. Search functionality will not work.');
+}
+
 // Pagination variables
 let currentPage = 1;
 const postsPerPage = 5;
