@@ -10,7 +10,9 @@ function paginatePosts(posts) {
 
 function renderPaginationControls(totalPosts) {
     const paginationContainer = document.createElement('div');
-    paginationContainer.className = 'flex justify-center mt-4';
+    // Add 'pagination' class so buttons can be easily targeted when
+    // updating the active page styling
+    paginationContainer.className = 'pagination flex justify-center mt-4';
 
     const totalPages = Math.ceil(totalPosts / postsPerPage);
 
