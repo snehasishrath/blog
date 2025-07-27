@@ -3,6 +3,16 @@ const path = require('path');
 const postsDir = path.join(__dirname, '../posts');
 const outputFile = path.join(__dirname, '../rss.xml');
 
+// Helper to remove wrapping quotes from front matter values
+function clean(value) {
+    const trimmed = value.trim();
+    if ((trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+        (trimmed.startsWith("'") && trimmed.endsWith("'"))) {
+        return trimmed.slice(1, -1);
+    }
+    return trimmed;
+}
+
 const siteUrl = 'https://your-blog-site.com';
 const rssHeader = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
@@ -30,17 +40,20 @@ fs.readdir(postsDir, (err, files) => {
 
         const frontmatter = metadata[1];
         const metadataObj = Object.fromEntries(
-            frontmatter.split('\n').filter(line => line).map(line => {
-                const [key, ...value] = line.split(':');
-                return [key.trim(), value.join(':').trim()];
-            })
+            frontmatter
+                .split('\n')
+                .filter(line => line)
+                .map(line => {
+                    const [key, ...value] = line.split(':');
+                    return [key.trim(), clean(value.join(':'))];
+                })
         );
 
         return `  <item>
-    <title>${metadataObj.title}</title>
-    <link>${siteUrl}/post.html?slug=${metadataObj.slug}</link>
-    <description>${metadataObj.title}</description>
-    <pubDate>${new Date(metadataObj.date).toUTCString()}</pubDate>
+    <title>${clean(metadataObj.title)}</title>
+    <link>${siteUrl}/post.html?slug=${clean(metadataObj.slug)}</link>
+    <description>${clean(metadataObj.title)}</description>
+    <pubDate>${new Date(clean(metadataObj.date)).toUTCString()}</pubDate>
   </item>`;
     }).join('\n');
 
