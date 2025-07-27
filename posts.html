@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Chronicles - GCP Posts</title>
+    <meta name="description" content="Cloud Chronicles - Your go-to blog for cloud computing insights, tips, and best practices.">
+    <meta name="keywords" content="cloud computing, cloud security, cloud deployment, cloud basics">
+    <meta name="author" content="Cloud Chronicles">
+    <title>Cloud Chronicles - Posts</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Added Google Fonts for professional typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -60,23 +64,36 @@
             }
         }
 
-        .cloud-image {
-            max-width: 100px;
-            height: auto;
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e3a8a;
+            padding: 0.5rem 1rem;
+            color: white;
         }
 
-        @media (min-width: 768px) {
-            .cloud-image {
-                max-width: 150px;
-            }
+        .top-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+        }
+
+        .top-menu a:hover {
+            text-decoration: underline;
         }
     </style>
+    <script>
+        // Ensure dark mode is applied on page load based on localStorage
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark');
+        }
+    </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
     <header class="bg-blue-600 text-white p-4 flex items-center">
-        <a href="index.html">
-            <img src="logo.svg" alt="Cloud Chronicles Logo" class="logo mr-4">
-        </a>
+        <img src="logo.svg" alt="Cloud Chronicles Logo" class="logo mr-4">
         <h1 class="text-2xl font-bold">Cloud Chronicles</h1>
         <img src="cloud.svg" alt="Cloud Image" class="cloud-image ml-auto">
     </header>
@@ -95,33 +112,21 @@
         </div>
     </div>
     <main class="p-4">
-        <section id="tag-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Blog posts filtered by tag will be dynamically injected here -->
+        <section id="posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Blog posts will be dynamically injected here -->
+        </section>
+        <section class="bg-white p-4 rounded shadow mt-4">
+            <h2 class="text-xl font-bold">Subscribe to our Newsletter</h2>
+            <form action="https://www.mailchimp.com" method="post" target="_blank" class="mt-2" aria-label="Newsletter Subscription Form">
+                <input type="email" name="EMAIL" placeholder="Enter your email" class="border p-2 rounded w-full mb-2" required aria-label="Email Address">
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded" aria-label="Subscribe to Newsletter">Subscribe</button>
+            </form>
         </section>
     </main>
     <footer class="bg-gray-800 text-white text-center p-4">
         <p>&copy; 2025 Cloud Chronicles Blog. All rights reserved.</p>
     </footer>
-    <script>
-        const tag = 'gcp';
-        fetch('posts.json')
-            .then(response => response.json())
-            .then(posts => {
-                const filteredPosts = posts.filter(post => post.tags.includes(tag));
-                const postsContainer = document.getElementById('tag-posts');
-                filteredPosts.forEach(post => {
-                    const postElement = document.createElement('div');
-                    postElement.className = 'bg-white p-4 rounded shadow';
-                    postElement.innerHTML = `
-                        <h2 class='text-xl font-bold'>${post.title}</h2>
-                        <p>${post.excerpt}</p>
-                        <p class='text-sm text-gray-500'>${new Date(post.date).toLocaleDateString()}</p>
-                        <a href='post.html?slug=${post.slug}' class='text-blue-600 underline'>Read more</a>
-                    `;
-                    postsContainer.appendChild(postElement);
-                });
-            })
-            .catch(error => console.error('Error loading posts:', error));
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
